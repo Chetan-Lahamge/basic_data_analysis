@@ -30,7 +30,3 @@ The app will open in your web browser, allowing you to upload a CSV file and sta
 - **Upload CSV**: Upload a CSV file for analysis.
 - **Data Exploration**: View summary statistics, value counts, and correlations.
 - **Visualization**: Generate histograms and boxplots for data analysis.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
