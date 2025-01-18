@@ -90,9 +90,10 @@ if st.button('Show Histogram'):
     if df.empty:
         st.write("Please upload a CSV file.")
     else:
-        plt.figure(figsize=(8,6))
-        sns.histplot(df[column].dropna(), kde=True)
-        st.pyplot()
+        # Create figure and axis
+        fig, ax = plt.subplots(figsize=(8, 6))
+        sns.histplot(df[column].dropna(), kde=True, ax=ax)
+        st.pyplot(fig)
 
 # Boxplot
 if st.button('Show Boxplot'):
