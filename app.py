@@ -115,6 +115,7 @@ elif option == 'Show Boxplot':
         if df[column].dtype not in [np.float64, np.int64]:
             st.write(f"The selected column '{column}' is not numeric. Please select a numeric column.")
         else:
-            plt.figure(figsize=(8, 6))
-            sns.boxplot(y=df[column].dropna())
-            st.pyplot()
+            # Create figure and axis
+            fig, ax = plt.subplots(figsize=(8, 6))
+            sns.boxplot(y=df[column].dropna(), ax=ax)  # Pass the ax to the boxplot function
+            st.pyplot(fig)  # Pass the figure explicitly to st.pyplot()
