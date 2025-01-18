@@ -21,7 +21,7 @@ This Streamlit-based application allows users to upload a CSV file and perform v
 https://github.com/Chetan-Lahamge/basic_data_analysis.git
 2. Navigate to the project directory:
 3. Install the required dependencies:
-4. Run the Streamlit app:
+4. Run the Streamlit app by running command in terminal: streamlit run app.py 
 
 The app will open in your web browser, allowing you to upload a CSV file and start exploring the data.
 
